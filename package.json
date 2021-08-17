@@ -16,12 +16,7 @@
     "postinstall": "husky install",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "src/**/*": [
-      "yarn lint --fix",
-      "yarn test --findRelatedTests --bail"
-    ]
-  },
+
   "dependencies": {
     "next": "11.0.1",
     "next-pwa": "^5.2.23",
