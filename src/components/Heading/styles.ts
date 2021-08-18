@@ -22,6 +22,8 @@ const style = ({
   justify-content: ${justify};
   text-align: ${textAlign};
   font-weight: ${theme.font[fontWeight]};
+  position: relative;
+
   ${margin &&
   css`
     margin: ${margin};
