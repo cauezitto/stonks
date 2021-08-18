@@ -12,9 +12,7 @@
     "test:ci": "jest --runInBand",
     "generate": "yarn plop --plopfile generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public",
-    "postinstall": "husky install",
-    "prepare": "husky install"
+    "build-storybook": "build-storybook -s ./public"
   },
 
   "dependencies": {
