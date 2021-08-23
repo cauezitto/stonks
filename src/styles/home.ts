@@ -4,6 +4,7 @@ export const GridWrapper = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  z-index: 5;
   gap: 10px;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
@@ -60,5 +61,13 @@ export const SkillWrapper = styled.div<SkillWrapperProps>`
       background: #e60c27;
       box-shadow: 6.86732px 6.86732px 5.49386px rgba(230, 12, 39, 0.3);
     }
+  `}
+`
+
+export const CustomersWrapper = styled.div`
+  ${({ theme }) => css`
+    display: grid;
+    gap: ${theme.spacings.xxlarge};
+    grid-template-columns: 1fr 1fr;
   `}
 `

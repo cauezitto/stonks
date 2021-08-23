@@ -1,5 +1,6 @@
 import Button from 'components/Button'
 import Column from 'components/Column'
+import Customer from 'components/Customer'
 import Header from 'components/Header'
 import Heading from 'components/Heading'
 import PaddingWrapper from 'components/PaddingWrapper'
@@ -7,8 +8,8 @@ import Paragraph from 'components/Paragraph'
 import Retangle from 'components/Retangle'
 import Row from 'components/Row'
 import { VerticalPaddingWrapper } from 'components/VerticalPaddingWrapper/styles'
-import { GridWrapper, SkillWrapper } from 'styles/home'
-
+import { GridWrapper, SkillWrapper, CustomersWrapper } from 'styles/home'
+import History from 'components/History'
 export default function Home() {
   return (
     <>
@@ -84,13 +85,8 @@ export default function Home() {
           <br />
           <br />
           <br />
-          <section style={{ position: 'relative', width: '100%' }}>
-            <img
-              style={{ position: 'absolute', width: '50%', zIndex: -1 }}
-              src="/img/redBall2.png"
-              alt="bola vermelha com anéis vermelhos em volta"
-            />
-            <PaddingWrapper>
+          <PaddingWrapper>
+            <section style={{ position: 'relative', width: '100%' }}>
               <GridWrapper>
                 <div className="skill1">
                   <SkillWrapper img="laptop.png">
@@ -149,20 +145,55 @@ export default function Home() {
                   </SkillWrapper>
                 </div>
               </GridWrapper>
+            </section>
+          </PaddingWrapper>
+        </VerticalPaddingWrapper>
+
+        <VerticalPaddingWrapper padding="xxxlarge">
+          <img
+            style={{ position: 'absolute', left: 0, width: '45%', zIndex: -1 }}
+            src="/img/redBall2.png"
+            alt="bola vermelha com anéis vermelhos em volta"
+          />
+          <section style={{ width: '100%' }}>
+            <Heading role="h2" fontSize="max" margin="0 0 80px 0">
+              OQUE DIZEM OS NOSSOS <br />
+              CLIENTES?
+            </Heading>
+
+            <PaddingWrapper>
+              <CustomersWrapper>
+                <Customer />
+                <Customer />
+                <Customer />
+                <Customer />
+              </CustomersWrapper>
             </PaddingWrapper>
           </section>
         </VerticalPaddingWrapper>
 
-        {/* <PaddingWrapper>
-          <Button>lalalaau</Button>
-        </PaddingWrapper> */}
+        <VerticalPaddingWrapper padding="xxxlarge">
+          <section style={{ width: '100%' }}>
+            <Heading role="h2" fontSize="max" margin="0 0 300px 0">
+              CONHEÇA NOSSA <br />
+              HISTÓRIA
+            </Heading>
+
+            <PaddingWrapper>
+              <History />
+            </PaddingWrapper>
+          </section>
+        </VerticalPaddingWrapper>
 
         <VerticalPaddingWrapper padding="xxxlarge">
-          <section style={{ position: 'absolute', width: '100%' }}>
-            <Heading role="h2" fontSize="max">
-              OQUE DIZEM OS NOSSOS <br />
-              CLIENTES?
+          <section style={{ width: '100%' }}>
+            <Heading role="h2" fontSize="xxxmax" margin="0 0 100px 0">
+              EAÍ, BORA DECOLAR?
             </Heading>
+
+            <Row justifyContent="center">
+              <Button>SÓ SE FOR AGORA!</Button>
+            </Row>
           </section>
         </VerticalPaddingWrapper>
       </main>

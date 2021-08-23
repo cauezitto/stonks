@@ -5,6 +5,7 @@ export type ColumnProps = {
   children: React.ReactNode
   justifyContent?: JustifyContent
   alignItems?: Align
+  margin?: string
 }
 
 const Column = (props: ColumnProps) => (
