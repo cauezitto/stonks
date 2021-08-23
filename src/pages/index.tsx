@@ -43,7 +43,8 @@ export default function Home() {
                   </Column>
 
                   <img
-                    src="/img/MNP.png"
+                    style={{ maxWidth: '50%' }}
+                    src="/img/MNP1.png"
                     alt="site desenvolvido para a empresa mas nem peixe"
                   />
                 </Row>
