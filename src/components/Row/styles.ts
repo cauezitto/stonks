@@ -21,6 +21,8 @@ export const Wrapper = styled.div<RowProps>`
     css`
       @media (max-width: ${theme.breakPoints.mobileL}) {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
     `}
   `}

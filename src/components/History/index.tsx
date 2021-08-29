@@ -11,19 +11,31 @@ const History = () => {
           selected={points[0]}
           onClick={() => setPoints([true, false, false])}
         >
-          <img src="/img/rocket1.png" alt="foguete vermelho deitado" />
+          <img
+            src="/img/rocket1.png"
+            alt="foguete vermelho deitado"
+            className="rocket"
+          />
         </S.Point>
         <S.Point
           selected={points[1]}
           onClick={() => setPoints([false, true, false])}
         >
-          <img src="/img/rocket2.png" alt="foguete vermelho decolando" />
+          <img
+            src="/img/rocket2.png"
+            alt="foguete vermelho decolando"
+            className="rocket"
+          />
         </S.Point>
         <S.Point
           selected={points[2]}
           onClick={() => setPoints([false, false, true])}
         >
-          <img src="/img/rocket3.png" alt="foguete vermelho em orbita" />
+          <img
+            src="/img/rocket3.png"
+            alt="foguete vermelho em orbita"
+            className="rocket"
+          />
         </S.Point>
       </S.Line>
 

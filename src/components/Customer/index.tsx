@@ -16,7 +16,7 @@ const Customer = () => (
       >
         <Heading
           role="h3"
-          fontSize="max"
+          fontSize="xxxlarge"
           fontWeight="normal"
           font="roboto"
           margin="0 0 3px 0"

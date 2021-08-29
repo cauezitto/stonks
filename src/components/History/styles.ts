@@ -4,8 +4,11 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     width: 100%;
     height: 250px;
-    margin-top: 15rem;
-    /* border: 1px solid; */
+    margin-top: 30rem;
+
+    @media (max-width: ${theme.breakPoints.mobileL}) {
+      margin-top: 18rem;
+    }
   `}
 `
 
@@ -26,8 +29,8 @@ type PointProps = {
 
 export const Point = styled.div<PointProps>`
   ${({ theme, selected }) => css`
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background-color: ${theme.colors.primaryRed};
     border-radius: 50%;
     position: relative;
@@ -37,7 +40,7 @@ export const Point = styled.div<PointProps>`
     flex-direction: column;
     cursor: pointer;
 
-    img {
+    .rocket {
       margin-top: -35rem;
     }
 
@@ -55,12 +58,12 @@ export const Point = styled.div<PointProps>`
 
     ${!selected &&
     css`
-      img {
+      .rocket {
         visibility: hidden;
       }
 
       &::after {
-        content: '(clique para interagir)';
+        content: '(clique aqui)';
         color: ${theme.colors.white100};
       }
     `}
@@ -68,6 +71,11 @@ export const Point = styled.div<PointProps>`
     @media (max-width: ${theme.breakPoints.mobileL}) {
       &::after {
         font-size: ${theme.font.sizes.xsmall};
+      }
+      .rocket {
+        max-width: 150px;
+        max-height: 180px;
+        margin-top: -24rem;
       }
     }
   `}

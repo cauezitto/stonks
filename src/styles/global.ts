@@ -171,6 +171,58 @@ const GlobalStyles = createGlobalStyle`
       background-color: ${theme.colors.white300};
     }
 
+    body {
+      animation-duration: 0.9s;
+      animation-name: slidein;
+      animation-iteration-count: 1;
+      overflow-x: hidden;
+    }
+    @keyframes slidein {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .balls {
+      delay: 2s;
+      animation-duration: 1.75s;
+      animation-name: ballAnimation;
+      animation-iteration-count: 1;
+      position: absolute;
+      width: 55%;
+      right: 0;
+      /* transition: all ease-in-out; */
+      @media (max-width: ${theme.breakPoints.tablet}) {
+        width: 90%;
+        bottom: -60%;
+      }
+    }
+    @keyframes ballAnimation {
+      0% {
+        right: -100px;
+        opacity: 0.75;
+      }
+      100% {
+        right: 0;
+        opacity: 1;
+      }
+    }
+
+    .retangle-paragraph {
+      margin: 0 0 0 115px;
+    }
+
+    .balls2 {
+      position: absolute;
+      left: 0;
+      width: 45%;
+      z-index: -1;
+    }
+
     @media (max-width: 1024px) {
       html {
         font-size: 60%;
@@ -179,7 +231,31 @@ const GlobalStyles = createGlobalStyle`
 
     @media (max-width: 768px) {
       html {
-        font-size: 58%;
+        font-size: 56%;
+      }
+      .desktop-contact-header {
+        display: none;
+      }
+      .desktop-portifolio {
+        display: none;
+      }
+      .balls {
+        display: none;
+        margin-top: -10px;
+        width: 60%;
+      }
+      .balls2 {
+        display: none;
+        width: 80%;
+        margin-top: 150px;
+      }
+
+      .retangle-paragraph {
+        margin: 0 0 0 95px;
+        z-index: 2;
+        .br-text {
+          display: none;
+        }
       }
     }
 

@@ -7,5 +7,8 @@ export const Wrapper = styled.div`
     @media (min-width: 1600px) {
       padding: 0 20%;
     }
+    @media (max-width: ${theme.breakPoints.tablet}) {
+      padding: 0 5%;
+    }
   `}
 `

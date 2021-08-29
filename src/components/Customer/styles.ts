@@ -7,6 +7,9 @@ export const Wrapper = styled.div`
     background-color: ${theme.colors.black};
     padding: ${theme.spacings.large};
     border-radius: 5px;
+    @media (max-width: ${theme.breakPoints.tablet}) {
+      height: auto;
+    }
   `}
 `
 

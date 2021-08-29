@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       <main>
         <img
-          style={{ position: 'absolute', right: 0, width: '55%' }}
+          className="balls"
           src="/img/redBall.png"
           alt="bola vermelha com anéis vermelhos em volta"
         />
@@ -24,25 +24,29 @@ export default function Home() {
           <VerticalPaddingWrapper padding="xxxlarge">
             <section style={{ position: 'relative' }}>
               <PaddingWrapper>
-                <Row justifyContent="space-between">
+                <Row justifyContent="space-between" responsive>
                   <Column alignItems="flex-start">
                     <Heading
                       fontSize="xxxmax"
                       textAlign="left"
                       justify="flex-start"
+                      responsive
                     >
                       CONSTRUA SUA <br /> PRESENÇA ONLINE!
                     </Heading>
+                    <br />
                     <Paragraph fontSize="xxxlarge">
                       Lorem ipsum dolor sit amet, <br /> consectetur adipiscing
                       elit. Ut <br /> pretium rutrum odio ac lacinia.
                     </Paragraph>
                     <br />
                     <br />
+                    <br />
                     <Button>SER DIGITAL</Button>
                   </Column>
 
                   <img
+                    className="desktop-portifolio"
                     style={{ maxWidth: '50%' }}
                     src="/img/MNP1.png"
                     alt="site desenvolvido para a empresa mas nem peixe"
@@ -68,13 +72,14 @@ export default function Home() {
                     <Retangle />
                     TUDO OQUE VOCÊ <br /> PRECISA PARA VENDER NA <br /> INTERNET
                   </Heading>
-                  <Paragraph fontSize="xxxlarge" margin="0 0 0 115px">
+                  <Paragraph fontSize="xxxlarge" className="retangle-paragraph">
                     <br />
                     <br />
                     Lorem ipsum dolor sit amet,
-                    <br /> consectetur adipiscing elit. <br /> Vestibulum cursus
-                    diam ut mattis <br /> ultrices. Vestibulum at mattis nulla.{' '}
-                    <br /> ultrices. Vestibulum
+                    <br className="br-text" /> consectetur adipiscing elit.{' '}
+                    <br className="br-text" /> Vestibulum cursus diam ut mattis{' '}
+                    <br className="br-text" /> ultrices. Vestibulum at mattis
+                    nulla. <br className="br-text" /> ultrices. Vestibulum
                     <br />
                     <br />
                     <Button>AGENDAR</Button>
@@ -88,6 +93,9 @@ export default function Home() {
           <br />
           <PaddingWrapper>
             <section style={{ position: 'relative', width: '100%' }}>
+              <Heading role="h2" fontSize="max" margin="0 0 80px 0">
+                REVOLUCIONE <br /> SUA MANEIRA DE VENDER
+              </Heading>
               <GridWrapper>
                 <div className="skill1">
                   <SkillWrapper img="laptop.png">
@@ -150,9 +158,31 @@ export default function Home() {
           </PaddingWrapper>
         </VerticalPaddingWrapper>
 
+        <VerticalPaddingWrapper>
+          <PaddingWrapper>
+            <Heading role="h2" fontSize="max" margin="0 0 60px 0">
+              ENTRE PARA O <br /> NOSSO PORTIFÓLIO
+            </Heading>
+
+            <Row justifyContent="center">
+              <img
+                className="mobile-portifolio"
+                style={{ maxWidth: '100%' }}
+                src="/img/MNP1.png"
+                alt="site desenvolvido para a empresa mas nem peixe"
+              />
+            </Row>
+            <br />
+            <br />
+            <Row justifyContent="center">
+              <Button>COMEÇAR AGORA</Button>
+            </Row>
+          </PaddingWrapper>
+        </VerticalPaddingWrapper>
+
         <VerticalPaddingWrapper padding="xxxlarge">
           <img
-            style={{ position: 'absolute', left: 0, width: '45%', zIndex: -1 }}
+            className="balls2"
             src="/img/redBall2.png"
             alt="bola vermelha com anéis vermelhos em volta"
           />
@@ -175,7 +205,7 @@ export default function Home() {
 
         <VerticalPaddingWrapper padding="xxxlarge">
           <section style={{ width: '100%' }}>
-            <Heading role="h2" fontSize="max" margin="0 0 300px 0">
+            <Heading role="h2" fontSize="max">
               CONHEÇA NOSSA <br />
               HISTÓRIA
             </Heading>

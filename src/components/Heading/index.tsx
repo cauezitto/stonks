@@ -20,6 +20,7 @@ export type HeadingProps = {
   margin?: string
   strongColor?: Color
   fontWeight?: FontWeight
+  responsive?: boolean
 }
 
 const Heading = (props: HeadingProps) => {

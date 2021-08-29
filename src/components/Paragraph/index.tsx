@@ -17,6 +17,7 @@ export type Props = {
   justify?: Justify
   textAlign?: TextAlign
   margin?: string
+  className?: string
 }
 
 const Paragraph = (props: Props) => (

@@ -14,7 +14,8 @@ const style = ({
   justify = 'center',
   margin,
   strongColor,
-  fontWeight = 'semiBold'
+  fontWeight = 'semiBold',
+  responsive
 }: StyleHeadingProps) => css`
   color: ${theme.colors[color]};
   font-family: ${theme.font.family[font]};
@@ -24,6 +25,13 @@ const style = ({
   font-weight: ${theme.font[fontWeight]};
   position: relative;
 
+  ${responsive &&
+  css`
+    @media (max-width: ${theme.breakPoints.tablet}) {
+      /* text-align: center; */
+      justify-content: center;
+    }
+  `}
   ${margin &&
   css`
     margin: ${margin};

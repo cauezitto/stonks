@@ -1,40 +1,48 @@
 import styled, { css } from 'styled-components'
 
 export const GridWrapper = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  z-index: 5;
-  gap: 10px;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-    '. . skill1'
-    '. skill2 .'
-    'skill3 . .';
-
-  .skill1 {
-    grid-area: skill1;
+  ${({ theme }) => css`
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    z-index: 5;
+    gap: 50px 5px;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    /* grid-template-areas:
+      '. . skill1'
+      '. skill2 .'
+      'skill3 . .'; */
+    grid-template-areas: 'skill1 skill2 skill3';
 
-  .skill2 {
-    grid-area: skill2;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    .skill1 {
+      grid-area: skill1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .skill3 {
-    grid-area: skill3;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    .skill2 {
+      grid-area: skill2;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .skill3 {
+      grid-area: skill3;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width: ${theme.breakPoints.tablet}) {
+      display: flex;
+      flex-direction: column;
+    }
+  `}
 `
 
 type SkillWrapperProps = {
@@ -69,5 +77,10 @@ export const CustomersWrapper = styled.div`
     display: grid;
     gap: ${theme.spacings.xxlarge};
     grid-template-columns: 1fr 1fr;
+
+    @media (max-width: ${theme.breakPoints.tablet}) {
+      display: flex;
+      flex-direction: column;
+    }
   `}
 `

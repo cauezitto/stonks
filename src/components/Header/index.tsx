@@ -5,7 +5,7 @@ import PaddingWrapper from 'components/PaddingWrapper'
 const Header = () => (
   <S.Wrapper>
     <PaddingWrapper>
-      <Image src="/img/logo.png" width={111} height={130} />
+      <img src="/img/logo.png" className="logo" alt="logo stonks" />
     </PaddingWrapper>
   </S.Wrapper>
 )
