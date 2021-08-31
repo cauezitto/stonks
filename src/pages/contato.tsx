@@ -2,7 +2,8 @@ import Heading from 'components/Heading'
 import Paragraph from 'components/Paragraph'
 import PaddingWrapper from 'components/PaddingWrapper'
 import Row from 'components/Row'
-import { FormWrapper, RedBox, Main } from 'styles/contato'
+import { FormWrapper, RedBox, Main, Input, TextBox } from 'styles/contato'
+import Button from 'components/Button'
 
 const Contato = () => {
   return (
@@ -17,15 +18,21 @@ const Contato = () => {
                 fontWeight="bold"
                 fontSize="xmax"
                 font="robotoCondensed"
+              
               >
                 DEIXE SUA MENSAGEM <br /> E TE RESPONDEREMOS <br />
                 EM BREVE
               </Heading>
             </div>
             <FormWrapper>
-              <Heading role="h2" color="white100" textAlign="left">
-                AGENDAR CONSULTORIA GRATUITA
+              <Heading role="h2" color="white100" textAlign="left"   margin ="0 0 30px 0" >
+                GARANTA SUA <br /> CONSULTORIA GRATUITA
               </Heading>
+
+              <Input placeholder="Nome" /> <br /> <br /> <br />
+              <Input placeholder="Celular" /> <br /> <br /> <br />
+              <TextBox placeholder="Quer falar mais sobre você?" /> <br /> <br /> <br />
+              <Button>ENVIAR</Button>
             </FormWrapper>
           </Row>
         </PaddingWrapper>

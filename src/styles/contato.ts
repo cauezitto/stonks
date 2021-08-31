@@ -17,8 +17,8 @@ export const Main = styled.main`
 export const FormWrapper = styled.form`
   ${({ theme }) => css`
     background-color: ${theme.colors.black};
-    width: 450px;
-    height: 500px;
+    width: 430px;
+    min-height: 450px;
     border-radius: 10px;
     padding: ${theme.spacings.medium};
 
@@ -26,4 +26,30 @@ export const FormWrapper = styled.form`
       width: 100%;
     }
   `}
+`
+
+export const Input = styled.input`
+${({theme})=>css`
+    background: none;
+    border: 0;
+    border-bottom: 2px solid ${theme.colors.primaryRed};
+    width: 80%;
+    font-size: ${theme.font.sizes.xlarge};
+    font-weight: ${theme.font.semiBold};
+
+`}
+`
+
+export const TextBox = styled.textarea`
+${({theme})=>css`
+    background: none;
+    border: 0;
+    border-bottom: 2px solid ${theme.colors.primaryRed};
+    width: 80%;
+    font-size: ${theme.font.sizes.xlarge};
+    font-weight: ${theme.font.semiBold};
+    font-family: ${theme.font.family.roboto};
+    outline: none;
+
+`}
 `
