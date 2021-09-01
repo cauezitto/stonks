@@ -10,7 +10,7 @@ export const GridWrapper = styled.div`
     /* grid-template-rows: 1fr 1fr 1fr; */
     /* grid-template-areas:
       '. . skill1'
-      '. skill2 .'
+      '. skill2 .'             
       'skill3 . .'; */
     grid-template-areas: 'skill1 skill2 skill3';
 

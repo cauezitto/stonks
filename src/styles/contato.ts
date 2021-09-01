@@ -29,19 +29,18 @@ export const FormWrapper = styled.form`
 `
 
 export const Input = styled.input`
-${({theme})=>css`
+  ${({ theme }) => css`
     background: none;
     border: 0;
     border-bottom: 2px solid ${theme.colors.primaryRed};
     width: 80%;
     font-size: ${theme.font.sizes.xlarge};
     font-weight: ${theme.font.semiBold};
-
-`}
+  `}
 `
 
 export const TextBox = styled.textarea`
-${({theme})=>css`
+  ${({ theme }) => css`
     background: none;
     border: 0;
     border-bottom: 2px solid ${theme.colors.primaryRed};
@@ -50,6 +49,5 @@ ${({theme})=>css`
     font-weight: ${theme.font.semiBold};
     font-family: ${theme.font.family.roboto};
     outline: none;
-
-`}
+  `}
 `

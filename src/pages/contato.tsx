@@ -18,20 +18,24 @@ const Contato = () => {
                 fontWeight="bold"
                 fontSize="xmax"
                 font="robotoCondensed"
-              
               >
                 DEIXE SUA MENSAGEM <br /> E TE RESPONDEREMOS <br />
                 EM BREVE
               </Heading>
             </div>
             <FormWrapper>
-              <Heading role="h2" color="white100" textAlign="left"   margin ="0 0 30px 0" >
+              <Heading
+                role="h2"
+                color="white100"
+                textAlign="left"
+                margin="0 0 30px 0"
+              >
                 GARANTA SUA <br /> CONSULTORIA GRATUITA
               </Heading>
-
               <Input placeholder="Nome" /> <br /> <br /> <br />
               <Input placeholder="Celular" /> <br /> <br /> <br />
-              <TextBox placeholder="Quer falar mais sobre você?" /> <br /> <br /> <br />
+              <TextBox placeholder="Quer falar mais sobre você?" /> <br />{' '}
+              <br /> <br />
               <Button>ENVIAR</Button>
             </FormWrapper>
           </Row>
