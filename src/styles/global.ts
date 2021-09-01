@@ -177,6 +177,9 @@ const GlobalStyles = createGlobalStyle`
       animation-iteration-count: 1;
       overflow-x: hidden;
     }
+    a {
+      text-decoration: none;
+    }
     @keyframes slidein {
       from {
         opacity: 0;

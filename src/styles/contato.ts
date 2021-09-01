@@ -21,6 +21,21 @@ export const FormWrapper = styled.form`
     min-height: 450px;
     border-radius: 10px;
     padding: ${theme.spacings.medium};
+    animation-duration: 1.48s;
+    animation-name: formAnimation;
+    animation-iteration-count: 1;
+
+    @keyframes formAnimation {
+      0% {
+        margin-right: -150px;
+      }
+      5% {
+        margin-right: -150px;
+      }
+      100% {
+        margin-right: 0;
+      }
+    }
 
     @media (max-width: ${theme.breakPoints.tablet}) {
       width: 100%;

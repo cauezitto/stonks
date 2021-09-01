@@ -10,6 +10,8 @@ import Row from 'components/Row'
 import { VerticalPaddingWrapper } from 'components/VerticalPaddingWrapper/styles'
 import { GridWrapper, SkillWrapper, CustomersWrapper } from 'styles/home'
 import History from 'components/History'
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <>
@@ -42,7 +44,11 @@ export default function Home() {
                     <br />
                     <br />
                     <br />
-                    <Button>SER DIGITAL</Button>
+                    <Link href="/contato">
+                      <a>
+                        <Button>SER DIGITAL</Button>
+                      </a>
+                    </Link>
                   </Column>
 
                   <img
@@ -82,7 +88,11 @@ export default function Home() {
                     nulla. <br className="br-text" /> ultrices. Vestibulum
                     <br />
                     <br />
-                    <Button>AGENDAR</Button>
+                    <Link href="/contato">
+                      <a>
+                        <Button>AGENDAR</Button>
+                      </a>
+                    </Link>
                   </Paragraph>
                 </Column>
               </Row>
@@ -175,7 +185,11 @@ export default function Home() {
             <br />
             <br />
             <Row justifyContent="center">
-              <Button>COMEÇAR AGORA</Button>
+              <Link href="/contato">
+                <a>
+                  <Button>COMEÇAR AGORA</Button>
+                </a>
+              </Link>
             </Row>
           </PaddingWrapper>
         </VerticalPaddingWrapper>
@@ -223,7 +237,11 @@ export default function Home() {
             </Heading>
 
             <Row justifyContent="center">
-              <Button>SÓ SE FOR AGORA!</Button>
+              <Link href="/contato">
+                <a>
+                  <Button>SÓ SE FOR AGORA!</Button>
+                </a>
+              </Link>
             </Row>
           </section>
         </VerticalPaddingWrapper>

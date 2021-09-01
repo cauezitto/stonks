@@ -4,6 +4,8 @@ import PaddingWrapper from 'components/PaddingWrapper'
 import Row from 'components/Row'
 import { FormWrapper, RedBox, Main, Input, TextBox } from 'styles/contato'
 import Button from 'components/Button'
+import { FiArrowLeft } from 'react-icons/fi'
+import Link from 'next/link'
 
 const Contato = () => {
   return (
@@ -39,6 +41,15 @@ const Contato = () => {
               <Button>ENVIAR</Button>
             </FormWrapper>
           </Row>
+
+          <Heading role="h3" textAlign="left" justify="flex-start">
+            <Link href="/">
+              <a style={{ textDecoration: 'none', color: '#fff' }}>
+                <FiArrowLeft style={{ marginBottom: -2 }} />
+                Voltar para a home
+              </a>
+            </Link>
+          </Heading>
         </PaddingWrapper>
       </Main>
     </>
