@@ -50,6 +50,7 @@ export const Input = styled.input`
     border-bottom: 2px solid ${theme.colors.primaryRed};
     width: 80%;
     font-size: ${theme.font.sizes.xlarge};
+    color: ${theme.colors.white100};
     font-weight: ${theme.font.semiBold};
   `}
 `
@@ -63,6 +64,8 @@ export const TextBox = styled.textarea`
     font-size: ${theme.font.sizes.xlarge};
     font-weight: ${theme.font.semiBold};
     font-family: ${theme.font.family.roboto};
+    height: auto;
+    color: ${theme.colors.white100};
     outline: none;
   `}
 `
